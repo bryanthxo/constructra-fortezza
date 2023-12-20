@@ -76,7 +76,7 @@ get_header(); ?>
 </section>
 <!-- end content-section -->
 
-<!-- Seccion Nosotros -->
+<!-- Seccion historia -->
 <section class="content-section no-spacing">
   <div class="container">
     <div class="row align-items-center">
@@ -102,9 +102,6 @@ get_header(); ?>
         <div class="side-content">
           <h5><?php echo esc_html( get_field('subtitulo_de_historia_3') ); ?></h5>
           <p><?php echo esc_html( the_field('parrafo_historia') ); ?></p>
-          <figure><img src="<?php bloginfo('template_url');?>/images/signature.png" alt="Image"></figure>
-          <h6>Dennis Rodman</h6>
-          <small>Ingeniero de Fortezza</small> </div>
         <!-- end side-content --> 
       </div>
       <!-- end col-6 --> 
@@ -258,8 +255,6 @@ get_header(); ?>
 </section>
 <!-- end content-section -->
 
-
-
 <div class="content-section" data-background="#f7f6f1">
   <div class="container">
   <?php if( have_rows('rep_logos_clientes') ): ?>
@@ -284,8 +279,8 @@ get_header(); ?>
     <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <h6>REACH UPDATES</h6>
-          <h2>Recent News</h2>
+          <h6>NUESTRAS NOTICIAS</h6>
+          <h2>Entradas Recientes</h2>
         </div>
         <!-- end section-title --> 
       </div>
@@ -305,7 +300,10 @@ get_header(); ?>
            <!-- <figure><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) { the_post_thumbnail(); } ?></a></figure> -->
           <div class="content"> <small><?php echo get_the_date(); ?></small>
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <div class="author"> <img src="<?php bloginfo('template_url');?>/images/author01.jpg" alt="Image"> <span>by <b><?php the_author(); ?></b></span> </div>
+            <div class="author">
+              <?php $avatar_url = get_avatar_url(get_the_author_meta( 'ID' ), array('size' => 450)); ?>
+              <img src="<?php echo esc_url( $avatar_url ); ?>" alt="Image"> <span>by <b><?php the_author(); ?></b></span>
+            </div>
             <!-- end author --> 
           </div>
           <!-- end content --> 
@@ -315,40 +313,8 @@ get_header(); ?>
       
       <?php endwhile; endif; ?>
       <!-- end col-5 -->
-      <!-- <div class="col-lg-7">
-        <div class="row inner">
-          <div class="col-md-6">
-            <div class="recent-news">
-              <figure> <img src="<?php bloginfo('template_url');?>/images/slide02.jpg" alt="Image"> </figure>
-              <div class="content"> <small>29 February, 2020</small>
-                <h3><a href="#">Challenge I participated in as a guest on all font</a></h3>
-                <div class="author"> <img src="<?php bloginfo('template_url');?>/images/author01.jpg" alt="Image"> <span>by <b>Consto Editor</b></span> </div> -->
-                <!-- end author --> 
-              <!-- </div> -->
-              <!-- end content --> 
-            <!-- </div> -->
-            <!-- end recent-news --> 
-          <!-- </div> -->
-          <!-- end col-4 -->
-          <!-- <div class="col-md-6">
-            <div class="recent-news">
-              <figure> <img src="<?php bloginfo('template_url');?>/images/slide03.jpg" alt="Image"> </figure>
-              <div class="content"> <small>29 February, 2020</small>
-                <h3><a href="#">Participated challenge in as a guest on The Future</a></h3> -->
-                <!-- <div class="author"> <img src="<?php bloginfo('template_url');?>/images/author01.jpg" alt="Image"> <span>by <b>Consto Editor</b></span> </div> -->
-                <!-- end author --> 
-              <!-- </div> -->
-              <!-- end content --> 
-            <!-- </div> -->
-            <!-- end recent-news --> 
-          <!-- </div> -->
-          <!-- end col-4 --> 
-        <!-- </div> -->
-        <!-- end row inner --> 
-      <!-- </div> -->
-      <!-- end col-7 --> 
-    <!-- </div> -->
-    
+     
+    </div>
     <!-- end row --> 
   </div>
   <!-- end container --> 

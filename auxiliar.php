@@ -184,3 +184,34 @@
   <!-- end container --> 
 </section>
 <!-- end content-section -->
+
+
+
+<div class="col-lg-4">
+			<div class="step-box">
+			<figure class="image"><img src="<?php bloginfo('template_url');?>/images/step02.jpg" alt="Image"></figure>
+			<div class="content">
+				<span>02.</span>
+			<figure class="icon"><img src="<?php bloginfo('template_url');?>/images/icon02.png" alt="Image"></figure>
+				<h6>OUR PROCESS</h6>
+				<p>Necessary ye contented newspaper zealously breakfast he prevailed. </p>
+			</div>
+				<!-- end content -->
+			</div>
+			<!-- end step-box -->
+		</div>
+		<!-- end col-4 -->
+		<div class="col-lg-4">
+			<div class="step-box">
+			<figure class="image"><img src="<?php bloginfo('template_url');?>/images/step03.jpg" alt="Image"></figure>
+			<div class="content">
+				<span>03.</span>
+			<figure class="icon"><img src="<?php bloginfo('template_url');?>/images/icon03.png" alt="Image"></figure>
+				<h6>PARTNERSHIP</h6>
+				<p>Necessary ye contented newspaper zealously breakfast he prevailed. </p>
+			</div>
+				<!-- end content -->
+			</div>
+			<!-- end step-box -->
+		</div>
+		<!-- end col-4 -->
