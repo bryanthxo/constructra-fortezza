@@ -215,3 +215,68 @@
 			<!-- end step-box -->
 		</div>
 		<!-- end col-4 -->
+
+
+    <li class="two">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide02.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>River Life Residence</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="three">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide03.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>Orgue Shopping Mall</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="EDIFICIOS">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide04.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>Green Socks Villas</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="two">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide05.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>Prensten Hudson's</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="three">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide06.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>York Education Center</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="EDIFICIOS">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide07.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>Miamy Beach House</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->
+				<li class="two">
+				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide08.jpg" alt="Image"></a>
+          <figcaption>
+            <h5>All Life Resorts</h5>
+          </figcaption>
+        </figure>
+					<!-- end project-box -->
+				</li>
+				<!-- end li -->

@@ -255,6 +255,7 @@ get_header(); ?>
 </section>
 <!-- end content-section -->
 
+<!-- Section Logo -->
 <div class="content-section" data-background="#f7f6f1">
   <div class="container">
   <?php if( have_rows('rep_logos_clientes') ): ?>
@@ -274,6 +275,7 @@ get_header(); ?>
   <!-- end container --> 
 </div>
 <!-- end content-section -->
+
 <section class="content-section">
   <div class="container">
     <div class="row">

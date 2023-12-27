@@ -1,4 +1,3 @@
-
 <section class="footer-bar">
   <div class="container">
     <div class="row">
@@ -24,7 +23,7 @@
         <div class="site-name"><?php bloginfo( 'name' ); ?></div>
     <?php endif; ?>
         </figure>
-        <h2>Vive <b>mejor</b> y <b>comodamente</b></h2>
+        <h2>Constru&iacute;mos <b>tus</b> sueños</h2>
         <a href="https://wa.me/59175002187?text=Mas%20informacion%20por%20favor" class="button">WhatsApp <i class="lni lni-arrow-right"></i></a>
         <div class="sales-representive">
           <figure> <img src="<?php bloginfo('template_url');?>/images/author01.jpg" alt="Image"> </figure>
@@ -47,7 +46,7 @@
         <p>Santa Cruz de la Sierra,<br>
           Bolivia</p>
         <p>+591 750-02-187</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">UBICACION EN MAPA</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">CONSULTA POR WHATSAPP</a>
         </address>
       </div>
       <!-- end col-4 -->
@@ -57,7 +56,7 @@
         <p>121 South 8th Street, Suite 1200<br>
           Minneapolis MN 55402</p>
         <p>+591 750-02-187</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">UBICACION EN MAPA</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">CONSULTA POR WHATSAPP</a>
         </address>
       </div>
       <!-- end col-4 -->

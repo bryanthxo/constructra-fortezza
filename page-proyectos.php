@@ -8,7 +8,6 @@ get_header(); ?>
 <header class="page-header">
   <div class="container">
     <h1><?php the_title(); ?></h1>
-	  <h6>Small Programs Perfect For Beginners To Get Started With Personal Growth</h6>
   </div>
   <!-- end container --> 
 </header>
@@ -19,86 +18,34 @@ get_header(); ?>
 		<div class="col-12">
 			<ul class="isotope-filter">
    			<li data-filter="*" class="current">TODOS</li>
-          	<li data-filter=".one">EDIFICIOS</li>
-          	<li data-filter=".two">COMERCIALES</li>
-          	<li data-filter=".three">VILLAS</li>
+			<?php if( have_rows('rep_proyecto_categoria') ): ?>
+        		<?php while( have_rows('rep_proyecto_categoria') ): the_row(); ?>
+			<li data-filter=".<?php echo get_sub_field('rep_proyecto_categoria_nombre'); ?>"><?php echo get_sub_field('rep_proyecto_categoria_nombre'); ?></li>
+				<?php endwhile; ?>
+      		<?php endif; ?>
    		</ul>
 		</div>
 		<!-- end col-12 -->
 	  	<div class="col-12">
 			<ul class="projects">
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide01.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Quark Life Homes</h5>
-          </figcaption>
-        </figure>
+
+			<?php if( have_rows('rep_proyecto') ): ?>
+        		<?php while( have_rows('rep_proyecto') ): the_row(); ?>
+				<li class="<?php echo get_sub_field('rep_proyecto_cat'); ?>">
+				 	<figure class="project-box">
+						<a href="<?php echo get_sub_field('rep_proyecto_url'); ?>">
+							<img src="<?php echo get_sub_field('rep_proyecto_imagen'); ?>" alt="Image">
+						</a>
+						<figcaption>
+							<h5><?php echo get_sub_field('rep_proyecto_nombre'); ?></h5>
+						</figcaption>
+					</figure>
 					<!-- end project-box -->
 				</li>
 				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide02.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>River Life Residence</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="three">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide03.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Orgue Shopping Mall</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide04.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Green Socks Villas</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide05.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Prensten Hudson's</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="three">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide06.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>York Education Center</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide07.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Miamy Beach House</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="<?php bloginfo('template_url');?>/images/slide08.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>All Life Resorts</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
+				<?php endwhile; ?>
+      		<?php endif; ?>
+				
 			</ul>
 		</div>
 		<!-- end col-12 -->

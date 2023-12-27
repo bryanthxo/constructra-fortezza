@@ -7,7 +7,6 @@ get_header(); ?>
 <header class="page-header">
   <div class="container">
     <h1><?php the_title(); ?></h1>
-	  <h6>Small Programs Perfect For Beginners To Get Started With Personal Growth</h6>
   </div>
   <!-- end container --> 
 </header>

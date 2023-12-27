@@ -2677,6 +2677,10 @@ theme.
   .logo-item img {
     width: 100%;
   }
+
+  .logo-inoxbol img {
+    height: 350px;
+  }
   
   /* RECENT NEWS */
   .recent-news {
@@ -3390,6 +3394,10 @@ theme.
     .logo-item {
       padding: 0 15px;
     }
+
+    .logo-inoxbol img {
+      height: 250px;
+    }
   
     .footer-bar h2 {
       padding: 0;
@@ -3568,6 +3576,10 @@ theme.
   
     .logo-item {
       margin: 15px 0;
+    }
+
+    .logo-inoxbol img {
+      height: 150px;
     }
   
     .col-lg-5 .recent-news {
